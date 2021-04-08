@@ -14,4 +14,4 @@ path = "C:/Users/jomen/Documents/self_project/LinkedIn_Jobs_Scraping/chromedrive
 
 df = scraper.get_jobs(keyword, location, path)
 
-df.to_csv("linkedin_scraper_full(2).csv", index=False)
+df.to_csv("linkedin_scrapeS.csv", index=False)

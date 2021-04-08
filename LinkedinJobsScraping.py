@@ -16,10 +16,10 @@ from selenium.webdriver.common.action_chains import ActionChains
 import pandas as pd
 
 def get_jobs(keywords, locations, path):
+    
+    """Intialization the set up and parameters"""
+    
     options = webdriver.ChromeOptions()
-    #options.add_argument('--no-sandbox')
-    #options.add_argument('--disable-dev-shm-usage')
-
     driver = webdriver.Chrome(executable_path=path, options=options)
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     url = "https://www.linkedin.com/jobs/search?position=1&pageNum=0"
@@ -36,10 +36,17 @@ def get_jobs(keywords, locations, path):
     location.send_keys(locations)
     location.send_keys(Keys.RETURN)
     
+    
+    """Find the maximum number of jobs found from the search"""
+    
     total_results = driver.find_element_by_class_name("results-context-header__job-count")
     total_results_int = int(total_results.text)
     print("Total jobs found for this search: ", total_results_int)
     time.sleep(2)
+    
+    
+    """Scroll down the page until the last page. The reason I put n=0 is beacuse start looping for scrolling down until
+    meet the button to see more jobs."""
     
     n = 0
     for i in range(n, 7):
@@ -82,6 +89,8 @@ def get_jobs(keywords, locations, path):
     driver.execute_script("window.scroll(0, 0);")
     print("It's time to extract your data")
     
+    
+    """Start the scraping"""
     
     while len(jobs) < total_results_int:
         time.sleep(2)
