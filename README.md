@@ -2,7 +2,7 @@
 
 ## Overview
 * Create script to scrape the data about Jobs posted from [LinkedIn](https://www.linkedin.com/) automatically
-* The automation build with 'Selenium' and 'Python'
+* The automation build with `Selenium` and `Python`
 * Do a simple Exploratory Data Analysis
 
 ## What I used
@@ -23,11 +23,11 @@ Scrape the information jobs posted from [LinkedIn](https://www.linkedin.com/) **
 
 ## Data Cleaning
 After scraping the data, I do simple EDA to cleaned it up to see early insights from the data itself
-* Manipulated the `Job Posting Time` and `Number of Applicants` into possible format we can use for next purposes, like ploting or even modeling)
+* Manipulated the `Job Posting Time` and `Number of Applicants` into possible format we can use for next purposes, like ploting or even modeling
 * Create new column that provided the information about when the jobs were posted (in a few days ago)
 
 ## My Early Insights
-1. Surprisingly, with `data engineer` as the keyowrd and `indonesia` as the location for my search job, the result shows that the most frequently job title is `software engineering`. It happened due the search engine just searching with all possibilities from the keyword<br>
+1. Surprisingly, with `data engineer` as the keyword and `indonesia` as the location for my search job, the result shows that the most frequently job title is `software engineering`. It happened due the search engine just searching with all possibilities from the keyword<br>
 ![alt text](https://github.com/Jomen034/LinkedIn_Jobs_Scraping/blob/master/fig/Word%20Cloud%20for%20Job%20Title.png "Word Cloud for Job Title")
 2. For this search, the **Entry Level** position is on the high demand. Can be said that for this job title, it gives biggest chance to **fresher** to join the company<br>
 ![alt text](https://github.com/Jomen034/LinkedIn_Jobs_Scraping/blob/master/fig/Seniority%20Level.png "Seniority Level")
