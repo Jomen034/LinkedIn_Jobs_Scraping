@@ -28,7 +28,7 @@ After scraping the data, I do simple EDA to cleaned it up to see early insights 
 
 ## My Early Insights
 1. Surprisingly, with `data engineer` as the keyword and `indonesia` as the location for my search job, the result shows that the most frequently job title is `software engineering`. It happened due the search engine just searching with all possibilities from the keyword<br>
-![alt text](https://github.com/Jomen034/LinkedIn_Jobs_Scraping/blob/master/fig/Word%20Cloud%20for%20Job%20Title.png "Word Cloud for Job Title")
+![alt text](https://github.com/Jomen034/LinkedIn_Jobs_Scraping/blob/master/fig/Word%20Cloud%20for%20Job%20Title.png "Word Cloud of Job Title")
 2. For this search, the **Entry Level** position is on the high demand. Can be said that for this job title, it gives biggest chance to **fresher** to join the company<br>
 ![alt text](https://github.com/Jomen034/LinkedIn_Jobs_Scraping/blob/master/fig/Seniority%20Level.png "Seniority Level")
 3. The recruiter is still actively hiring for this position. Most of jobs posted in recently time **(under 30 days ago)**<br>
