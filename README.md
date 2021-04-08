@@ -5,6 +5,9 @@
 * The automation build with `Selenium` and `Python`
 * Do a simple Exploratory Data Analysis
 
+## Flow of Scraping
+![alt text](https://github.com/Jomen034/LinkedIn_Jobs_Scraping/blob/master/Flow%20of%20Scraping.jpg "Flow of Scraping")
+
 ## What I used
 * **Python Version: 3.8** to create the script
 * **Packages:** pandas, numpy, selenium
