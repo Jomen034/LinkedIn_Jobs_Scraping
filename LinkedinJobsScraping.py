@@ -206,7 +206,8 @@ def get_jobs(keywords, locations, path):
                 except:
                     time.sleep(2)
                     
-                jobs.append({
+                try:
+                    jobs.append({
                         "Job Title": job_title.text,
                         "Company": company.text,
                         "Posted Date": job_posting_time.text,
@@ -218,8 +219,9 @@ def get_jobs(keywords, locations, path):
                         "Detail Desc": detail_desc,
                         "Employment Type": employment_type
                         })
-                time.sleep(1)
-                
+                    time.sleep(1)
+                except StaleElementReferenceException:
+                    continue
     
     return pd.DataFrame(jobs)
 
